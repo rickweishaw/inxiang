@@ -1,0 +1,145 @@
+@charset "UTF-8";
+body {
+  background-color: #f8f8f8;
+  color: #333;
+}
+
+a {
+  display: inline-block;
+  color: #333;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #2c83c4;
+}
+
+.container {
+  position: relative;
+  margin: 44px auto 10px auto;
+  width: 440px;
+  height: 400px;
+  background-color: #fff;
+  border: 1px solid #c9c9c9;
+}
+
+header > * { display: inline-block; }
+
+header {
+  height: 50px;
+  margin-top: 24px;
+  text-align: center;
+}
+
+h1 {
+  display: inline-block;
+  position: relative;
+  bottom: 12px;
+  margin: 0;
+  font-size: 24px;
+  font-weight: normal;
+  line-height: 50px;
+  margin-left: 6px;
+}
+
+header img {
+  width: 40px;
+  height: 40px;
+  display: inline-block;
+}
+
+dl {
+  width: 340px;
+  margin: 0 auto;
+}
+
+dt, dd { 
+  padding: 8px 0;
+  text-align: center;
+  margin: 0 auto;
+}
+
+input { border-radius: 4px; }
+
+input[type="email"],
+input[type="text"],
+input[type="password"] {
+  width: 260px;
+  height: 32px;
+  border: 1px solid #ccc;
+  line-height: 32px;
+  padding: 0 4px;
+  font-size: 14px;
+  outline: none;
+  background-color: #f8f8f8;
+}
+
+span {
+  cursor: pointer;
+  position: absolute;
+  right: 94px;
+  top: 224px;
+}
+
+input[type='submit'] {
+  width: 260px;
+  height: 32px;
+  border: 1px solid #2c83c4;
+  background-color: #2c83c4;
+  color: #fff;
+}
+
+dl dd:last-child {
+  font-size: 14px;
+  color: #797979;
+}
+
+.switcher {
+  color: #797979;
+  width: 440px;
+  height: 44px;
+  line-height: 44px;
+  margin: 0 auto;
+  text-align: center;
+  background-color: #fff;
+  border: 1px solid #c9c9c9;
+}
+
+.pwd-forgot { cursor: pointer; }
+
+.forgot {
+  display: none;
+  position: absolute;
+  bottom: 280px;
+  left: 610px;
+  width: 320px;
+  height: 330px;
+  background-color: #fff;
+  border: 1px solid #c9c9c9;
+}
+
+.forgot div, h4 {
+  text-align: center;
+  margin: 18px 0;
+}
+
+.forgot span {
+  cursor: pointer;
+  position: absolute;
+  right: 40px;
+  top: 186px;
+}
+
+.forgot .close {
+  position: absolute;
+  top: 16px;
+  right: 18px;
+  display: inline-block;
+  margin: 0;
+  cursor: pointer;
+}
+
+.pure-button {
+  margin-top: 20px;
+  width: 260px;
+}

@@ -1,0 +1,1039 @@
+---------------------------------------------------------------
+[ 2019-03-15T08:18:12+08:00 ] 192.168.100.254 GET inxiang.net/
+[运行时间：2.754800s] [吞吐率：0.36req/s] [内存消耗：3,307.08kb] [文件加载：54]
+[ info ] [ LANG ] H:\WWW\inx\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'inxiang.net',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'name=rcwei',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ H:\WWW\inx\application\index\controller\Index.php ]
+[ info ] [ BEHAVIOR ] Run app\login\behavior\CheckLogin @CheckLogin [ RunTime:0.002430s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] H:\WWW\inx\public/../application/index\view\index\index.html [ array (
+  0 => 'user',
+  1 => 'work',
+  2 => 'author',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.247353s ] mysql:host=localhost;dbname=inxiang;charset=UTF8MB4
+[ sql ] [ SQL ] SELECT avatar, author FROM in_user, in_gallery WHERE in_gallery.author_id = in_user.id ORDER BY in_gallery.upload_time DESC [ RunTime:0.157221s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `in_user` [ RunTime:0.161078s ]
+[ sql ] [ SQL ] SELECT * FROM `in_user` WHERE  `nickname` = 'rcwei' LIMIT 1 [ RunTime:0.002323s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `in_gallery` [ RunTime:0.015768s ]
+[ sql ] [ SQL ] SELECT * FROM `in_gallery` ORDER BY `upload_time` DESC [ RunTime:0.000907s ]
+---------------------------------------------------------------
+[ 2019-03-15T08:18:40+08:00 ] 192.168.100.254 GET inxiang.net/
+[运行时间：3.986061s] [吞吐率：0.25req/s] [内存消耗：3,307.19kb] [文件加载：54]
+[ info ] [ LANG ] H:\WWW\inx\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'inxiang.net',
+  'connection' => 'keep-alive',
+  'pragma' => 'no-cache',
+  'cache-control' => 'no-cache',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'name=rcwei',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ H:\WWW\inx\application\index\controller\Index.php ]
+[ info ] [ BEHAVIOR ] Run app\login\behavior\CheckLogin @CheckLogin [ RunTime:0.001703s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] H:\WWW\inx\public/../application/index\view\index\index.html [ array (
+  0 => 'user',
+  1 => 'work',
+  2 => 'author',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.152622s ] mysql:host=localhost;dbname=inxiang;charset=UTF8MB4
+[ sql ] [ SQL ] SELECT avatar, author FROM in_user, in_gallery WHERE in_gallery.author_id = in_user.id ORDER BY in_gallery.upload_time DESC [ RunTime:0.036181s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `in_user` [ RunTime:0.301282s ]
+[ sql ] [ SQL ] SELECT * FROM `in_user` WHERE  `nickname` = 'rcwei' LIMIT 1 [ RunTime:0.002072s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `in_gallery` [ RunTime:0.012193s ]
+[ sql ] [ SQL ] SELECT * FROM `in_gallery` ORDER BY `upload_time` DESC [ RunTime:0.001338s ]
+---------------------------------------------------------------
+[ 2019-03-15T08:41:34+08:00 ] 127.0.0.1 GET inxiang.net/
+[运行时间：1.769695s] [吞吐率：0.57req/s] [内存消耗：3,306.79kb] [文件加载：54]
+[ info ] [ LANG ] H:\WWW\inx\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'inxiang.net',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.98 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'name=rcwei28',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ H:\WWW\inx\application\index\controller\Index.php ]
+[ info ] [ BEHAVIOR ] Run app\login\behavior\CheckLogin @CheckLogin [ RunTime:0.001377s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] H:\WWW\inx\public/../application/index\view\index\index.html [ array (
+  0 => 'user',
+  1 => 'work',
+  2 => 'author',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.353334s ] mysql:host=localhost;dbname=inxiang;charset=UTF8MB4
+[ sql ] [ SQL ] SELECT avatar, author FROM in_user, in_gallery WHERE in_gallery.author_id = in_user.id ORDER BY in_gallery.upload_time DESC [ RunTime:0.191936s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `in_user` [ RunTime:0.341205s ]
+[ sql ] [ SQL ] SELECT * FROM `in_user` WHERE  `nickname` = 'rcwei28' LIMIT 1 [ RunTime:0.000733s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `in_gallery` [ RunTime:0.105915s ]
+[ sql ] [ SQL ] SELECT * FROM `in_gallery` ORDER BY `upload_time` DESC [ RunTime:0.000971s ]
+ESC [ RunTime:0.000844s ]
+---------------------------------------------------------------
+[ 2019-03-15T08:41:59+08:00 ] 127.0.0.1 GET inxiang.net/index/detail?id=9
+[运行时间：0.709000s] [吞吐率：1.41req/s] [内存消耗：3,311.59kb] [文件加载：53]
+[ info ] [ LANG ] H:\WWW\inx\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'detail',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'inxiang.net',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.98 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://inxiang.net/',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'name=rcwei28',
+)
+[ info ] [ PARAM ] array (
+  'id' => '9',
+)
+[ info ] [ RUN ] app\index\controller\Detail->index[ H:\WWW\inx\application\index\controller\Detail.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] H:\WWW\inx\public/../application/index\view\detail\detail.html [ array (
+  0 => 'avatar',
+  1 => 'name',
+  2 => 'item',
+  3 => 'aid',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010602s ] mysql:host=localhost;dbname=inxiang;charset=UTF8MB4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `in_gallery` [ RunTime:0.016708s ]
+[ sql ] [ SQL ] SELECT * FROM `in_gallery` WHERE  `id` = 9 LIMIT 1 [ RunTime:0.087630s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `in_user` [ RunTime:0.012905s ]
+[ sql ] [ SQL ] SELECT `avatar` FROM `in_user` WHERE  `nickname` = 'rcwei28' LIMIT 1 [ RunTime:0.000683s ]
+[ sql ] [ SQL ] SELECT `author_id` FROM `in_gallery` WHERE  `id` = 9 LIMIT 1 [ RunTime:0.000631s ]
+---------------------------------------------------------------
+[ 2019-03-15T08:50:26+08:00 ] 127.0.0.1 GET inxiang.net/
+[运行时间：1.014265s] [吞吐率：0.99req/s] [内存消耗：3,306.95kb] [文件加载：54]
+[ info ] [ LANG ] H:\WWW\inx\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'inxiang.net',
+  'connection' => 'keep-alive',
+  'purpose' => 'prefetch',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.98 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'name=rcwei28',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ H:\WWW\inx\application\index\controller\Index.php ]
+[ info ] [ BEHAVIOR ] Run app\login\behavior\CheckLogin @CheckLogin [ RunTime:0.002979s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] H:\WWW\inx\public/../application/index\view\index\index.html [ array (
+  0 => 'user',
+  1 => 'work',
+  2 => 'author',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.042347s ] mysql:host=localhost;dbname=inxiang;charset=UTF8MB4
+[ sql ] [ SQL ] SELECT avatar, author FROM in_user, in_gallery WHERE in_gallery.author_id = in_user.id ORDER BY in_gallery.upload_time DESC [ RunTime:0.040079s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `in_user` [ RunTime:0.026628s ]
+[ sql ] [ SQL ] SELECT * FROM `in_user` WHERE  `nickname` = 'rcwei28' LIMIT 1 [ RunTime:0.002143s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `in_gallery` [ RunTime:0.015005s ]
+[ sql ] [ SQL ] SELECT * FROM `in_gallery` ORDER BY `upload_time` DESC [ RunTime:0.000724s ]
+---------------------------------------------------------------
+[ 2019-03-15T12:53:00+08:00 ] 127.0.0.1 GET inxiang.net/
+[运行时间：6.071305s] [吞吐率：0.16req/s] [内存消耗：3,306.77kb] [文件加载：54]
+[ info ] [ LANG ] H:\WWW\inx\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'inxiang.net',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.98 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'name=rcwei28',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ H:\WWW\inx\application\index\controller\Index.php ]
+[ info ] [ BEHAVIOR ] Run app\login\behavior\CheckLogin @CheckLogin [ RunTime:0.070928s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] H:\WWW\inx\public/../application/index\view\index\index.html [ array (
+  0 => 'user',
+  1 => 'work',
+  2 => 'author',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.819169s ] mysql:host=localhost;dbname=inxiang;charset=UTF8MB4
+[ sql ] [ SQL ] SELECT avatar, author FROM in_user, in_gallery WHERE in_gallery.author_id = in_user.id ORDER BY in_gallery.upload_time DESC [ RunTime:0.586516s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `in_user` [ RunTime:0.150793s ]
+[ sql ] [ SQL ] SELECT * FROM `in_user` WHERE  `nickname` = 'rcwei28' LIMIT 1 [ RunTime:0.014015s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `in_gallery` [ RunTime:0.034041s ]
+[ sql ] [ SQL ] SELECT * FROM `in_gallery` ORDER BY `upload_time` DESC [ RunTime:0.000737s ]
+ESC [ RunTime:0.000758s ]
+---------------------------------------------------------------
+[ 2019-03-15T20:32:04+08:00 ] 127.0.0.1 GET inxiang.net/
+[运行时间：4.423414s] [吞吐率：0.23req/s] [内存消耗：3,306.95kb] [文件加载：54]
+[ info ] [ LANG ] H:\WWW\inx\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'inxiang.net',
+  'connection' => 'keep-alive',
+  'purpose' => 'prefetch',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.98 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'name=rcwei28',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ H:\WWW\inx\application\index\controller\Index.php ]
+[ info ] [ BEHAVIOR ] Run app\login\behavior\CheckLogin @CheckLogin [ RunTime:0.017769s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] H:\WWW\inx\public/../application/index\view\index\index.html [ array (
+  0 => 'user',
+  1 => 'work',
+  2 => 'author',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.503624s ] mysql:host=localhost;dbname=inxiang;charset=UTF8MB4
+[ sql ] [ SQL ] SELECT avatar, author FROM in_user, in_gallery WHERE in_gallery.author_id = in_user.id ORDER BY in_gallery.upload_time DESC [ RunTime:0.357836s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `in_user` [ RunTime:0.559040s ]
+[ sql ] [ SQL ] SELECT * FROM `in_user` WHERE  `nickname` = 'rcwei28' LIMIT 1 [ RunTime:0.003467s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `in_gallery` [ RunTime:0.040158s ]
+[ sql ] [ SQL ] SELECT * FROM `in_gallery` ORDER BY `upload_time` DESC [ RunTime:0.000616s ]
+---------------------------------------------------------------
+[ 2019-03-15T23:52:48+08:00 ] 127.0.0.1 GET inxiang.net/
+[运行时间：1.488403s] [吞吐率：0.67req/s] [内存消耗：1,920.93kb] [文件加载：44]
+[ info ] [ LANG ] H:\WWW\inx\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'inxiang.net',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.98 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ H:\WWW\inx\application\index\controller\Index.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-03-15T23:52:48+08:00 ] 127.0.0.1 GET inxiang.net/register
+[运行时间：0.296465s] [吞吐率：3.37req/s] [内存消耗：1,833.94kb] [文件加载：40]
+[ info ] [ LANG ] H:\WWW\inx\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'register',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'inxiang.net',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.98 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\register\controller\Index->index[ H:\WWW\inx\application\register\controller\Index.php ]
+[ info ] [ VIEW ] H:\WWW\inx\public/../application/register\view\index\reg.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-03-15T23:52:51+08:00 ] 127.0.0.1 GET inxiang.net/login
+[运行时间：0.052819s] [吞吐率：18.93req/s] [内存消耗：1,833.92kb] [文件加载：40]
+[ info ] [ LANG ] H:\WWW\inx\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'login',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'inxiang.net',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.98 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://inxiang.net/register',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\login\controller\Index->Index[ H:\WWW\inx\application\login\controller\Index.php ]
+[ info ] [ VIEW ] H:\WWW\inx\public/../application/login\view\index\login.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-03-15T23:52:54+08:00 ] 127.0.0.1 GET inxiang.net/register
+[运行时间：0.024262s] [吞吐率：41.22req/s] [内存消耗：1,834.09kb] [文件加载：40]
+[ info ] [ LANG ] H:\WWW\inx\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'register',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'inxiang.net',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.98 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://inxiang.net/login',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\register\controller\Index->index[ H:\WWW\inx\application\register\controller\Index.php ]
+[ info ] [ VIEW ] H:\WWW\inx\public/../application/register\view\index\reg.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-03-15T23:54:02+08:00 ] 127.0.0.1 POST inxiang.net/register/post
+[运行时间：1.078382s] [吞吐率：0.93req/s] [内存消耗：2,870.80kb] [文件加载：52]
+[ info ] [ LANG ] H:\WWW\inx\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'register',
+    1 => 'post',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'inxiang.net',
+  'connection' => 'keep-alive',
+  'content-length' => '57',
+  'cache-control' => 'max-age=0',
+  'origin' => 'http://inxiang.net',
+  'upgrade-insecure-requests' => '1',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.98 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://inxiang.net/register',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+)
+[ info ] [ PARAM ] array (
+  'email' => 'rcwei44@qq.com',
+  'nickname' => 'rcwei28',
+  'password' => 'soda1228',
+)
+[ info ] [ RUN ] app\register\controller\Post->index[ H:\WWW\inx\application\register\controller\Post.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.059872s ] mysql:host=localhost;dbname=inxiang;charset=UTF8MB4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `in_user` [ RunTime:0.022221s ]
+[ error ] [10501]SQLSTATE[42S22]: Column not found: 1054 Unknown column 'email' in 'field list'[H:\WWW\inx\thinkphp\library\think\db\Connection.php:385]
+---------------------------------------------------------------
+[ 2019-03-15T23:54:45+08:00 ] 127.0.0.1 POST inxiang.net/register/post
+[运行时间：0.296653s] [吞吐率：3.37req/s] [内存消耗：3,276.65kb] [文件加载：54]
+[ info ] [ LANG ] H:\WWW\inx\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'register',
+    1 => 'post',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'inxiang.net',
+  'connection' => 'keep-alive',
+  'content-length' => '57',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.98 Safari/537.36',
+  'origin' => 'http://inxiang.net',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://inxiang.net/register',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+)
+[ info ] [ PARAM ] array (
+  'email' => 'rcwei44@qq.com',
+  'nickname' => 'rcwei28',
+  'password' => 'soda1228',
+)
+[ info ] [ RUN ] app\register\controller\Post->index[ H:\WWW\inx\application\register\controller\Post.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011143s ] mysql:host=localhost;dbname=inxiang;charset=UTF8MB4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `in_user` [ RunTime:0.017362s ]
+[ sql ] [ SQL ] SELECT `email` FROM `in_user` LIMIT 1 [ RunTime:0.000566s ]
+[ sql ] [ SQL ] SELECT `nickname` FROM `in_user` LIMIT 1 [ RunTime:0.000857s ]
+[ sql ] [ SQL ] INSERT INTO `in_user` (`email` , `nickname` , `password`) VALUES ('rcwei44@qq.com' , 'rcwei28' , '301f912a4b17af1c26d581a7557f4ed8e2e572ed') [ RunTime:0.063747s ]
+[ error ] [8]未定义数组索引: nicj[H:\WWW\inx\application\register\controller\Post.php:22]
+---------------------------------------------------------------
+[ 2019-03-15T23:56:14+08:00 ] 127.0.0.1 POST inxiang.net/register/post
+[运行时间：1.225122s] [吞吐率：0.82req/s] [内存消耗：2,812.70kb] [文件加载：49]
+[ info ] [ LANG ] H:\WWW\inx\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'register',
+    1 => 'post',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'inxiang.net',
+  'connection' => 'keep-alive',
+  'content-length' => '57',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.98 Safari/537.36',
+  'origin' => 'http://inxiang.net',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://inxiang.net/register',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'name=rcwei28; email=rcwei44%40qq.com',
+)
+[ info ] [ PARAM ] array (
+  'email' => 'rcwei44@qq.com',
+  'nickname' => 'rcwei28',
+  'password' => 'soda1228',
+)
+[ info ] [ RUN ] app\register\controller\Post->index[ H:\WWW\inx\application\register\controller\Post.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] H:\WWW\inx\thinkphp\tpl\dispatch_jump.tpl [ array (
+  0 => 'code',
+  1 => 'msg',
+  2 => 'data',
+  3 => 'url',
+  4 => 'wait',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011743s ] mysql:host=localhost;dbname=inxiang;charset=UTF8MB4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `in_user` [ RunTime:0.013577s ]
+[ sql ] [ SQL ] SELECT `email` FROM `in_user` LIMIT 1 [ RunTime:0.000411s ]
+---------------------------------------------------------------
+[ 2019-03-15T23:56:40+08:00 ] 127.0.0.1 GET inxiang.net/login
+[运行时间：0.174325s] [吞吐率：5.74req/s] [内存消耗：1,834.47kb] [文件加载：40]
+[ info ] [ LANG ] H:\WWW\inx\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'login',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'inxiang.net',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.98 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://inxiang.net/register',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'name=rcwei28; email=rcwei44%40qq.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\login\controller\Index->Index[ H:\WWW\inx\application\login\controller\Index.php ]
+[ info ] [ VIEW ] H:\WWW\inx\public/../application/login\view\index\login.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-03-15T23:56:52+08:00 ] 127.0.0.1 POST inxiang.net/login/post
+[运行时间：0.191677s] [吞吐率：5.22req/s] [内存消耗：3,194.63kb] [文件加载：51]
+[ info ] [ LANG ] H:\WWW\inx\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'login',
+    1 => 'post',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'inxiang.net',
+  'connection' => 'keep-alive',
+  'content-length' => '54',
+  'cache-control' => 'max-age=0',
+  'origin' => 'http://inxiang.net',
+  'upgrade-insecure-requests' => '1',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.98 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://inxiang.net/login',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'name=rcwei28; email=rcwei44%40qq.com',
+)
+[ info ] [ PARAM ] array (
+  'email' => 'rcwei44@qq.com',
+  'password' => 'soda1228',
+  'remember' => 'true',
+)
+[ info ] [ RUN ] app\login\controller\Post->index[ H:\WWW\inx\application\login\controller\Post.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] H:\WWW\inx\thinkphp\tpl\dispatch_jump.tpl [ array (
+  0 => 'code',
+  1 => 'msg',
+  2 => 'data',
+  3 => 'url',
+  4 => 'wait',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001100s ] mysql:host=localhost;dbname=inxiang;charset=UTF8MB4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `in_user` [ RunTime:0.024037s ]
+[ sql ] [ SQL ] SELECT `is_active` FROM `in_user` WHERE  `email` = 'rcwei44@qq.com' LIMIT 1 [ RunTime:0.001324s ]
+---------------------------------------------------------------
+[ 2019-03-15T23:57:43+08:00 ] 127.0.0.1 GET inxiang.net/register
+[运行时间：0.077155s] [吞吐率：12.96req/s] [内存消耗：1,834.38kb] [文件加载：40]
+[ info ] [ LANG ] H:\WWW\inx\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'register',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'inxiang.net',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.98 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://inxiang.net/login',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'name=rcwei28; email=rcwei44%40qq.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\register\controller\Index->index[ H:\WWW\inx\application\register\controller\Index.php ]
+[ info ] [ VIEW ] H:\WWW\inx\public/../application/register\view\index\reg.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-03-15T23:57:58+08:00 ] 127.0.0.1 POST inxiang.net/register/post
+[运行时间：0.109171s] [吞吐率：9.16req/s] [内存消耗：2,853.82kb] [文件加载：50]
+[ info ] [ LANG ] H:\WWW\inx\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'register',
+    1 => 'post',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'inxiang.net',
+  'connection' => 'keep-alive',
+  'content-length' => '57',
+  'cache-control' => 'max-age=0',
+  'origin' => 'http://inxiang.net',
+  'upgrade-insecure-requests' => '1',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.98 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://inxiang.net/register',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'name=rcwei28; email=rcwei44%40qq.com',
+)
+[ info ] [ PARAM ] array (
+  'email' => 'rcwei44@qq.com',
+  'nickname' => 'rcwei28',
+  'password' => 'soda1228',
+)
+[ info ] [ RUN ] app\register\controller\Post->index[ H:\WWW\inx\application\register\controller\Post.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] H:\WWW\inx\thinkphp\tpl\dispatch_jump.tpl [ array (
+  0 => 'code',
+  1 => 'msg',
+  2 => 'data',
+  3 => 'url',
+  4 => 'wait',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011194s ] mysql:host=localhost;dbname=inxiang;charset=UTF8MB4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `in_user` [ RunTime:0.013851s ]
+[ sql ] [ SQL ] SELECT `email` FROM `in_user` LIMIT 1 [ RunTime:0.000448s ]
+[ sql ] [ SQL ] SELECT `nickname` FROM `in_user` LIMIT 1 [ RunTime:0.000377s ]
+[ sql ] [ SQL ] INSERT INTO `in_user` (`email` , `nickname` , `password`) VALUES ('rcwei44@qq.com' , 'rcwei28' , '301f912a4b17af1c26d581a7557f4ed8e2e572ed') [ RunTime:0.024109s ]
+---------------------------------------------------------------
+[ 2019-03-15T23:58:04+08:00 ] 127.0.0.1 GET inxiang.net/register/activation
+[运行时间：3.111381s] [吞吐率：0.32req/s] [内存消耗：2,554.95kb] [文件加载：42]
+[ info ] [ LANG ] H:\WWW\inx\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'register',
+    1 => 'activation',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'inxiang.net',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.98 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://inxiang.net/register/post',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'name=rcwei28; email=rcwei44%40qq.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\register\controller\Activation->index[ H:\WWW\inx\application\register\controller\Activation.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-03-15T23:58:06+08:00 ] 127.0.0.1 GET inxiang.net/register/login
+[运行时间：0.236235s] [吞吐率：4.23req/s] [内存消耗：1,606.20kb] [文件加载：37]
+[ info ] [ LANG ] H:\WWW\inx\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'register',
+    1 => 'login',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'inxiang.net',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.98 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://inxiang.net/register/activation',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'name=rcwei28; email=rcwei44%40qq.com; PHPSESSID=hkc2ehemmr9n51eu2nrs5ns1l0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-03-15T23:58:12+08:00 ] 127.0.0.1 GET inxiang.net/register/checkNum/?num=382883
+[运行时间：0.617910s] [吞吐率：1.62req/s] [内存消耗：3,223.94kb] [文件加载：52]
+[ info ] [ LANG ] H:\WWW\inx\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'register',
+    1 => 'checkNum',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'inxiang.net',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.98 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'https://mail.qq.com/',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'name=rcwei28; email=rcwei44%40qq.com; PHPSESSID=hkc2ehemmr9n51eu2nrs5ns1l0',
+)
+[ info ] [ PARAM ] array (
+  'num' => '382883',
+)
+[ info ] [ RUN ] app\register\controller\CheckNum->index[ H:\WWW\inx\application\register\controller\Checknum.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] H:\WWW\inx\thinkphp\tpl\dispatch_jump.tpl [ array (
+  0 => 'code',
+  1 => 'msg',
+  2 => 'data',
+  3 => 'url',
+  4 => 'wait',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001288s ] mysql:host=localhost;dbname=inxiang;charset=UTF8MB4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `in_user` [ RunTime:0.167512s ]
+[ sql ] [ SQL ] UPDATE `in_user`  SET `is_active`=1  WHERE  `nickname` = 'rcwei28' [ RunTime:0.138883s ]
+---------------------------------------------------------------
+[ 2019-03-15T23:58:17+08:00 ] 127.0.0.1 GET inxiang.net/login
+[运行时间：0.028987s] [吞吐率：34.50req/s] [内存消耗：1,834.55kb] [文件加载：40]
+[ info ] [ LANG ] H:\WWW\inx\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'login',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'inxiang.net',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.98 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://inxiang.net/register/checkNum/?num=382883',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'name=rcwei28; email=rcwei44%40qq.com; PHPSESSID=hkc2ehemmr9n51eu2nrs5ns1l0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\login\controller\Index->Index[ H:\WWW\inx\application\login\controller\Index.php ]
+[ info ] [ VIEW ] H:\WWW\inx\public/../application/login\view\index\login.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-03-15T23:58:30+08:00 ] 127.0.0.1 POST inxiang.net/login/post
+[运行时间：0.077218s] [吞吐率：12.95req/s] [内存消耗：3,241.02kb] [文件加载：52]
+[ info ] [ LANG ] H:\WWW\inx\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'login',
+    1 => 'post',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'inxiang.net',
+  'connection' => 'keep-alive',
+  'content-length' => '54',
+  'cache-control' => 'max-age=0',
+  'origin' => 'http://inxiang.net',
+  'upgrade-insecure-requests' => '1',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.98 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://inxiang.net/login',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'name=rcwei28; email=rcwei44%40qq.com; PHPSESSID=hkc2ehemmr9n51eu2nrs5ns1l0',
+)
+[ info ] [ PARAM ] array (
+  'email' => 'rcwei44@qq.com',
+  'password' => 'soda1228',
+  'remember' => 'true',
+)
+[ info ] [ RUN ] app\login\controller\Post->index[ H:\WWW\inx\application\login\controller\Post.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ VIEW ] H:\WWW\inx\thinkphp\tpl\dispatch_jump.tpl [ array (
+  0 => 'code',
+  1 => 'msg',
+  2 => 'data',
+  3 => 'url',
+  4 => 'wait',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011377s ] mysql:host=localhost;dbname=inxiang;charset=UTF8MB4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `in_user` [ RunTime:0.013816s ]
+[ sql ] [ SQL ] SELECT `is_active` FROM `in_user` WHERE  `email` = 'rcwei44@qq.com' LIMIT 1 [ RunTime:0.000431s ]
+[ sql ] [ SQL ] SELECT `nickname` FROM `in_user` WHERE  `email` = 'rcwei44@qq.com' LIMIT 1 [ RunTime:0.000394s ]
+[ sql ] [ SQL ] SELECT `password` FROM `in_user` WHERE  `email` = 'rcwei44@qq.com' LIMIT 1 [ RunTime:0.000422s ]
+---------------------------------------------------------------
+[ 2019-03-15T23:58:33+08:00 ] 127.0.0.1 GET inxiang.net/
+[运行时间：0.224480s] [吞吐率：4.45req/s] [内存消耗：3,285.61kb] [文件加载：54]
+[ info ] [ LANG ] H:\WWW\inx\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'inxiang.net',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.98 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://inxiang.net/login/post',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'name=rcwei28; email=rcwei44%40qq.com; PHPSESSID=hkc2ehemmr9n51eu2nrs5ns1l0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ H:\WWW\inx\application\index\controller\Index.php ]
+[ info ] [ BEHAVIOR ] Run app\login\behavior\CheckLogin @CheckLogin [ RunTime:0.001607s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] H:\WWW\inx\public/../application/index\view\index\index.html [ array (
+  0 => 'user',
+  1 => 'work',
+  2 => 'author',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001567s ] mysql:host=localhost;dbname=inxiang;charset=UTF8MB4
+[ sql ] [ SQL ] SELECT avatar, author FROM in_user, in_gallery WHERE in_gallery.author_id = in_user.id ORDER BY in_gallery.upload_time DESC [ RunTime:0.000636s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `in_user` [ RunTime:0.013001s ]
+[ sql ] [ SQL ] SELECT * FROM `in_user` WHERE  `nickname` = 'rcwei28' LIMIT 1 [ RunTime:0.000679s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `in_gallery` [ RunTime:0.010812s ]
+[ sql ] [ SQL ] SELECT * FROM `in_gallery` ORDER BY `upload_time` DESC [ RunTime:0.000486s ]
+---------------------------------------------------------------
+[ 2019-03-15T23:58:39+08:00 ] 127.0.0.1 GET inxiang.net/user
+[运行时间：0.246422s] [吞吐率：4.06req/s] [内存消耗：3,289.73kb] [文件加载：54]
+[ info ] [ LANG ] H:\WWW\inx\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'user',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'inxiang.net',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.98 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://inxiang.net/',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'name=rcwei28; email=rcwei44%40qq.com; PHPSESSID=hkc2ehemmr9n51eu2nrs5ns1l0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\user\controller\Index->index[ H:\WWW\inx\application\user\controller\Index.php ]
+[ info ] [ BEHAVIOR ] Run app\login\behavior\CheckLogin @CheckLogin [ RunTime:0.000661s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] H:\WWW\inx\public/../application/user\view\index\user.html [ array (
+  0 => 'avatar',
+  1 => 'saying',
+  2 => 'name',
+  3 => 'gallery',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011863s ] mysql:host=localhost;dbname=inxiang;charset=UTF8MB4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `in_user` [ RunTime:0.014574s ]
+[ sql ] [ SQL ] SELECT `avatar` FROM `in_user` WHERE  `nickname` = 'rcwei28' LIMIT 1 [ RunTime:0.000342s ]
+[ sql ] [ SQL ] SELECT `saying` FROM `in_user` WHERE  `nickname` = 'rcwei28' LIMIT 1 [ RunTime:0.000418s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `in_gallery` [ RunTime:0.009372s ]
+[ sql ] [ SQL ] SELECT * FROM `in_gallery` WHERE  `author` = 'rcwei28' ORDER BY `upload_time` DESC [ RunTime:0.000501s ]
+---------------------------------------------------------------
+[ 2019-03-15T23:58:41+08:00 ] 127.0.0.1 GET inxiang.net/account
+[运行时间：0.164648s] [吞吐率：6.07req/s] [内存消耗：3,305.81kb] [文件加载：56]
+[ info ] [ LANG ] H:\WWW\inx\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'account',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'inxiang.net',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.98 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://inxiang.net/user',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'name=rcwei28; email=rcwei44%40qq.com; PHPSESSID=hkc2ehemmr9n51eu2nrs5ns1l0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\account\controller\Index->index[ H:\WWW\inx\application\account\controller\Index.php ]
+[ info ] [ BEHAVIOR ] Run app\login\behavior\CheckLogin @CheckLogin [ RunTime:0.000662s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011059s ] mysql:host=localhost;dbname=inxiang;charset=UTF8MB4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `in_user` [ RunTime:0.021045s ]
+[ sql ] [ SQL ] SELECT `email` FROM `in_user` WHERE  `nickname` = 'rcwei28' LIMIT 1 [ RunTime:0.000442s ]
+[ sql ] [ SQL ] SELECT `avatar` FROM `in_user` WHERE  `nickname` = 'rcwei28' LIMIT 1 [ RunTime:0.000408s ]
+[ sql ] [ SQL ] SELECT `saying` FROM `in_user` WHERE  `nickname` = 'rcwei28' LIMIT 1 [ RunTime:0.000395s ]
+[ error ] [10501]SQLSTATE[42S22]: Column not found: 1054 Unknown column 'phone' in 'field list'[H:\WWW\inx\thinkphp\library\think\db\Connection.php:385]
+---------------------------------------------------------------
+[ 2019-03-15T23:59:23+08:00 ] 127.0.0.1 GET inxiang.net/account
+[运行时间：0.648093s] [吞吐率：1.54req/s] [内存消耗：3,252.61kb] [文件加载：52]
+[ info ] [ LANG ] H:\WWW\inx\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'account',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'inxiang.net',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.98 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://inxiang.net/user',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'name=rcwei28; email=rcwei44%40qq.com; PHPSESSID=hkc2ehemmr9n51eu2nrs5ns1l0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\account\controller\Index->index[ H:\WWW\inx\application\account\controller\Index.php ]
+[ info ] [ BEHAVIOR ] Run app\login\behavior\CheckLogin @CheckLogin [ RunTime:0.000884s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] H:\WWW\inx\public/../application/account\view\index\account.html [ array (
+  0 => 'email',
+  1 => 'avatar',
+  2 => 'saying',
+  3 => 'phone',
+  4 => 'gender',
+  5 => 'name',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011567s ] mysql:host=localhost;dbname=inxiang;charset=UTF8MB4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `in_user` [ RunTime:0.016209s ]
+[ sql ] [ SQL ] SELECT `email` FROM `in_user` WHERE  `nickname` = 'rcwei28' LIMIT 1 [ RunTime:0.000443s ]
+[ sql ] [ SQL ] SELECT `avatar` FROM `in_user` WHERE  `nickname` = 'rcwei28' LIMIT 1 [ RunTime:0.000378s ]
+[ sql ] [ SQL ] SELECT `saying` FROM `in_user` WHERE  `nickname` = 'rcwei28' LIMIT 1 [ RunTime:0.000373s ]
+[ sql ] [ SQL ] SELECT `phone` FROM `in_user` WHERE  `nickname` = 'rcwei28' LIMIT 1 [ RunTime:0.000424s ]
+[ sql ] [ SQL ] SELECT `gender` FROM `in_user` WHERE  `nickname` = 'rcwei28' LIMIT 1 [ RunTime:0.000358s ]

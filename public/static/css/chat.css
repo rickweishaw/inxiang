@@ -1,0 +1,92 @@
+@charset "UTF-8";
+html, body { height: 100% }
+
+body {
+  font-size: 16px;
+  color: #333;
+  background-color: #f8f8f8;
+}
+
+a {
+  display: inline-block;
+  color: #333;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+a:hover { color: #2c83c4; }
+
+.iconfont {
+  font-family: "iconfont" !important;
+  font-style: normal;
+}
+
+.container {
+  position: relative;
+  margin: 0 auto;
+  width: 55%;
+  height: 100%;
+  background-color: #fff;
+}
+
+.container > :not(.chat-user, .exit) {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.chat-user {
+  height: 2em;
+  text-align: center;
+  line-height: 2em;
+  font-size: 17px;
+  background-color: #ccd6e1;
+}
+
+.mk-chat-box{ height: 35em; }
+
+.btm-box {
+  position: absolute;
+  bottom: 0;
+  width: 95%;
+  padding-left: 1.2em;
+  padding-bottom: 1em;
+}
+
+#editor {
+  width: 100%;
+  height: 6em;
+  margin-bottom: .5em;
+  box-shadow: none;
+  resize: none;
+}
+
+.btns .iconfont { font-size: 20px; }
+
+button[type="submit"] { float: right; }
+
+.tips {
+  margin-right: 1em;
+  float: right;
+  color: #999;
+  font-size: .8em;
+}
+
+#exit {
+  position: relative;
+  bottom: 1.6em;
+  right: 1em;
+  display: inline-block;
+  float: right;
+  width: 1em;
+  height: 1em;
+  border: 1px dashed transparent;
+  cursor: pointer;
+}
+
+#exit:hover { border: 1px dashed #666; }
+
+.avatar {
+  line-height: 2em;
+  text-align: center;
+  color: #fff;
+}

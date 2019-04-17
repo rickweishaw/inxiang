@@ -1,0 +1,144 @@
+@charset "UTF-8";
+body {
+  font-size: 16px;
+  color: #333;
+  background-color: #f8f8f8;
+}
+
+a {
+  display: inline-block;
+  color: #333;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+a:hover {
+  color: #2c83c4;
+}
+
+.iconfont {
+  font-family: "iconfont" !important;
+  font-style: normal;
+  font-size: 32px;
+}
+
+header > * { display: inline-block; }
+
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 50px;
+  background-color: #fff;
+}
+
+h1 {
+  display: inline-block;
+  margin: 0;
+  font-size: 21px;
+  font-weight: normal;
+  line-height: 50px;
+}
+
+header img {
+  position: relative;
+  top: 6px;
+  width: 28px;
+  height: 28px;
+  display: inline-block;
+  margin: 0 10px 0 44px;
+}
+
+.menu {
+  position: relative;
+  right: 9%;
+  float: right;
+  width: 12%;
+  display: inline-block;
+
+}
+
+.container {
+  width: 1000px;
+  margin: 50px auto 0 auto;
+}
+
+.container .iconfont { font-size: 22px; }
+
+.avatar, .avatar img {
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+}
+
+.info { 
+  padding: 44px;
+  padding-bottom: 12px;
+}
+
+.info > div, .desc p > * { display: inline-block; }
+
+.desc {
+  position: relative;
+  left: 64px;
+  bottom: 26px;
+}
+
+.desc p:first-child { font-size: 20px; }
+
+#edit {
+  padding: 2px 4px;
+  font-size: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.desc p:nth-child(2),
+.desc p:last-child { font-size: 14px; }
+
+.desc p span, .desc p:last-child { padding: 0 12px; }
+
+.desc p i {
+  position: relative;
+  top: 2px;
+}
+
+.gallery p  {
+  padding: 4px 0;
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+  text-align: center;
+}
+
+.gallery .item {
+  width: 280px;
+  height: 280px;
+  float: left;
+  margin: 24px;
+}
+
+.gallery .item img{
+  width: 100%;
+  height: 100%;
+}
+
+.setting {
+  position: absolute;
+  top: 14em;
+  left: 43em;
+  width: 220px;
+  display: none;
+  text-align: center;
+  border-radius: 6px;
+  border: 1px solid #c9c9c9;
+  background-color: #fff;
+}
+
+.setting ul li { padding: 6px 0; }
+
+.pure-menu-heading {
+  font-size: 14px;
+  color: #999;
+}
+
+.item img { cursor: pointer; }
