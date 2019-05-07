@@ -1,6 +1,7 @@
 # folders
 runtime/log
 .vscode
+runtime
 
 # files
 .gittattributes
