@@ -1,8 +1,10 @@
 @charset "UTF-8";
+html, body { height: 100%; }
+
 body {
     font-size: 16px;
     color: #333;
-    background-color: #f8f8f8;
+    /* background-color: #fff; */
 }
 
 a {
@@ -27,7 +29,7 @@ header {
   top: 0;
   width: 100%;
   height: 50px;
-  background-color: #fff;
+  /* background-color: #fff; */
 }
 
 h1 {
@@ -59,4 +61,21 @@ header img {
   position: relative;
   width: 70%;
   margin: 0 auto;
+}
+
+.main {
+  width: 60%;
+  box-sizing: border-box;
+  margin-top: 60px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.items {
+  width: 240px;
+  height: 240px;
+  border: 1px solid #333;
+  background-color: #fff;
+  margin: 30px;
+  float: left;
 }
