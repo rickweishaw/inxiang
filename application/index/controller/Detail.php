@@ -17,17 +17,17 @@ class Detail extends Controller
         $this->assign('avatar', $avatar);
         $this->assign('name', $name);
         $this->assign('item', $item);
-        $this->assign('aid', G::where('id', $id)->value('author_id'));        
+        $this->assign('aid', G::where('id', $id)->value('author_id'));
         return view('detail');
     }
 
     public function Del(){
         $id = input('id');
-        if ( !U::where('nickname', cookie('name'))->value('id') == G::where('id', $id)->value('author_id')) {
+        if ( U::where('nickname', cookie('name'))->value('id') == G::where('id', $id)->value('author_id')) {
             $path = G::where('id', $id)->value('path');
             if (strtoupper(substr(PHP_OS,0,3))==='WIN') {
                 // in windows
-                $path = str_replace('/', '\\', str_replace('http://inxiang.net/', ROOT_PATH.DS.'public'.DS, $path)); 
+                $path = str_replace('/', '\\', str_replace('http://inxiang.net/', ROOT_PATH.DS.'public'.DS, $path));
                 if (db('gallery')->where('id', $id)->delete()) {
                     unlink($path);
                     echo "<script>alert('删除成功');window.opener=null;
@@ -39,7 +39,7 @@ class Detail extends Controller
             } else {
                 // in linux
                 if (db('gallery')->where('id', $id)->delete()) {
-                    unlink(str_replace('http://inxiang.net/', ROOT_PATH.DS.'public'.DS, $path)); 
+                    unlink(str_replace('http://inxiang.net/', ROOT_PATH.DS.'public'.DS, $path));
                     echo "<script>alert('删除成功');window.opener=null;
                     window.open('','_self');window.close();</script>";
                     return $this->redirect('http://inxiang.net/user');
