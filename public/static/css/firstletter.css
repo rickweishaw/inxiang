@@ -1,0 +1,18 @@
+@charset "UTF-8";
+.ltr-cnt {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 40px;
+  background-color: #0248ef;
+  color: #fff;
+ font-size: 18px;
+ float: left;
+}
+
+.ltr-word {
+  padding-left: 8px;
+  position: relative;
+  top: 10px;
+}
