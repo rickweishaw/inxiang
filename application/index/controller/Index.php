@@ -14,4 +14,9 @@ class Index extends Controller
         $this->assign('work', G::order('upload_time', 'desc')->select());
         return view('index');
     }
+
+    //TODO: 只做点赞跟加好友
+    public function like() {
+        
+    }
 }

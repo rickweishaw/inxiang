@@ -29,15 +29,6 @@ preview = (pic) => {
     }
 }
 
-frm[1].onsubmit = () => {
-    if ($('#content').value.length == 0) {
-        alert('请输入文字');
-        $('#content').focus();
-        return false;
-    }
-    return true;
-}
-
 for (let i = 0; i < img.length; i++) {
     img[i].onclick = () => {
         window.open('index/detail?id='+img[i].alt, 'detail',

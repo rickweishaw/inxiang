@@ -13,14 +13,12 @@ class Update extends Controller
         $update['phone'] = input('phone');
         $update['gender'] = input('gender');
 
-        if (UserModel::where('nickname', $update['nickname']) ->
-            update(['nickname'=>$update['nickname'], 'saying'=>$update['saying'],
-            'phone'=>$update['phone'],'gender'=>$update['gender'],])) {
+        if (UserModel::where('nickname', cookie('name')) ->
+            update(['saying'=>$update['saying'],'phone'=>$update['phone'],'gender'=>$update['gender'],])) {
             return $this->success('修改成功');
         } else {
             return $this->error('修改失败');
         }
     }
 }
-
 ?>

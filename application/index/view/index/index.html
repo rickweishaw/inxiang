@@ -38,24 +38,11 @@
             <li class="pure-menu-item">
               <a href="#" title="点赞" class="pure-menu-link"><i class="iconfont icon-like"></i> 42</a>
             </li>
-            <li class="pure-menu-item">
-              <a href="#" title="评论" class="pure-menu-link"><i class="iconfont icon-comment"></i> 42</a>
-            </li>
-            <li class="pure-menu-item">
-              <a href="#" title="转发" class="pure-menu-link"><i class="iconfont icon-forward"></i> 42</a>
-            </li>
           </ul>
         </div>
         <div class="info-box">
           <p class="title"><span>{$item.author}</span><span style="display:inline-block;">{$item.desc}</span></p>
           <p class="date-time">{$item.upload_time} 发布</p>
-          <p class="comment"><span>xzx28</span><span>评论内容</span></p>
-          <p class="more">加载更多评论</p>
-          <hr>
-          <form action="comment" method="post" class="pure-form comment">
-            <img src="{$user.avatar}"> <input type="text" name="com_cnt" placeholder="添加评论...">
-            <input type="submit" value="评论">
-          </form>
         </div>
       </div> <!-- work end -->
       {/volist}
@@ -68,7 +55,7 @@
       </a>
       <div class="out-box">
         <p style="color: #2c83c4">有什么新鲜事想告诉大家?</p>
-        <form action="index/post" method="post" class="pure-form">
+        <form action="#" method="post" class="pure-form">
           <input type="hidden" id="base64" name="base64" value="">
           <textarea name="content" id="content" placeholder="这一刻的想法..." title='按 "N" 输入内容'></textarea>
           <div class="up-img">
@@ -89,7 +76,7 @@
         </form>
       </div>
       <footer>
-        <p>Copyright &copy; <a target="__blank" href="https://github.com/rcwei44">RCWei</a></p>
+        <p>Copyright &copy; <a target="__blank" href="https://github.com/rickweishaw">RCWei</a></p>
       </footer>
     </aside>
   </div>
