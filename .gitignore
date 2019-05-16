@@ -2,6 +2,7 @@
 runtime/log
 .vscode
 runtime
+.idea/**
 
 # files
 .gittattributes
