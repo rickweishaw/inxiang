@@ -49,6 +49,15 @@ header img {
   margin: 0 10px 0 44px;
 }
 
+.user {
+  margin-left: 16px;
+  height: 40px;
+  line-height: 40px;
+  font-weight: 100;
+  color: #000;
+  font-size: 20px;
+}
+
 .menu {
   position: relative;
   right: 9%;
@@ -64,12 +73,6 @@ header img {
 }
 
 .container .iconfont { font-size: 22px; }
-
-.avatar, .avatar img {
-  width: 140px;
-  height: 140px;
-  border-radius: 50%;
-}
 
 .info { 
   padding: 44px;

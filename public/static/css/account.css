@@ -22,6 +22,15 @@ a:hover {
   font-size: 32px;
 }
 
+.user {
+  margin-left: 16px;
+  height: 40px;
+  line-height: 40px;
+  font-weight: 100;
+  color: #000;
+  font-size: 20px;
+}
+
 header > * { display: inline-block; }
 
 header {
@@ -79,14 +88,6 @@ aside, .main {
 
 .profile > div { display: inline-block; }
 
-.avatar { width: 50px; }
-
-.avatar img {
-  border-radius: 50%;
-  width: 100%;
-  height: auto;
-}
-
 .info {
   position: relative;
   bottom: 6px;
@@ -117,7 +118,7 @@ aside ul li .pure-menu-link { height: 32px; }
 
 .active a { background-color: #e6e6e6; }
 
-.password, .c-avatar, .email { display: none; }
+.password, .email { display: none; }
 
 .password {
   padding: 6em;
@@ -132,20 +133,6 @@ aside ul li .pure-menu-link { height: 32px; }
 .email input,
 .password input { width: 20em; }
 
-.c-avatar {
-  padding: 120px;
-  padding-top: 160px;
-}
-
-.c-avatar div { text-align: center; }
-
-.c-avatar div:last-child { margin-top: 16px; }
-
-.c-avatar p {
-  font-size: 14px;
-  color: #666;
-}
-
 input[type="file"] {
   position: absolute;
   left: 24.6em;
@@ -155,12 +142,6 @@ input[type="file"] {
   border: 1px solid #333;
   cursor: pointer;
   opacity: 0;
-}
-
-#avatar {
-  margin-top: 1em;
-  width: 120px;
-  border-radius: 50%;
 }
 
 .btn-2nd {
