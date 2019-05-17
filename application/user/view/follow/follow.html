@@ -36,7 +36,6 @@
     {volist name="followed" id="item"}
     {php}$info = U::where('nickname', $item)->find();{/php}
     <div class="friend">
-      <div class="avatar"><img src="{$info.avatar}"></div>
       <div><p>{$info.nickname}</p><p>{$info.saying}</p></div>
       <div class="pure-menu pure-menu-horizontal action">
         <ul class="pure-menu-list">
