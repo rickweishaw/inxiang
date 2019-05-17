@@ -25,10 +25,8 @@
 
   <div class="container pure-g">
     <div class="pure-u-15-24 post">
-      {php}use app\index\model\User as U;{/php}
       {volist name="work" id="item"}
       <div class="work"> <!-- work begin -->
-        <img src="{php}echo U::where('nickname', 'rcwei28')->value('avatar'){/php}" class="avatar">
         <div class="user">{$item.author}</div>
         <div class="pic">
           <img src="{$item.path}" alt="{$item.id}" title="点击图片查看详情">
@@ -50,12 +48,11 @@
 
     <aside class="pure-u-6-24">
       <a href="user" style="display: block;">
-        <img class="avatar" src="{$user.avatar}">
         <div class="user">{$user.nickname}</div><div class="bio">{$user.saying}</div>
       </a>
       <div class="out-box">
         <p style="color: #2c83c4">有什么新鲜事想告诉大家?</p>
-        <form action="#" method="post" class="pure-form">
+        <form action="index/post" method="post" class="pure-form">
           <input type="hidden" id="base64" name="base64" value="">
           <textarea name="content" id="content" placeholder="这一刻的想法..." title='按 "N" 输入内容'></textarea>
           <div class="up-img">
@@ -66,10 +63,9 @@
 
           <div class="pure-menu pure-menu-horizontal post-act">
             <ul class="pure-menu-list">
-              <li class="pure-menu-item"><a href="#" title="表情，Win10可以按 [win+.] 调出Emoji面板"><i class="iconfont icon-face pure-menu-link"></i></a></li>
               <li class="pure-menu-item"><a id="showImg" title="图片"><i class="iconfont icon-pics pure-menu-link"></i></a></li>
-              <li class="pure-menu-item"><a href="#" title="视频"><i class="iconfont icon-video pure-menu-link"></i></a></li>
-              <li class="pure-menu-item"><a href="#" title="话题"><i class="iconfont icon-tag pure-menu-link"></i></a></li>
+              <li class="pure-menu-item"></li>
+              <li class="pure-menu-item"></li>
               <li class="pure-menu-item"><input type="submit" value="发布" class="pure-button pure-button-primary"></li>
             </ul>
           </div>

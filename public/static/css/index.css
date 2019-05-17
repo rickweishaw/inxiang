@@ -90,10 +90,12 @@ header img {
 }
 
 .user {
-  display: inline-block;
-  margin-top: 10px;
+  margin-left: 16px;
   height: 40px;
   line-height: 40px;
+  font-weight: 100;
+  color: #000;
+  font-size: 20px;
 }
 
 .work .action .iconfont {  font-size: 20px; }
@@ -141,6 +143,7 @@ aside {
 }
 
 aside .user {
+  margin: 0;
   height: 22px;
   line-height: 22px;
 }
