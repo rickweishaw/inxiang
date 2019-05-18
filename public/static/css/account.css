@@ -23,7 +23,7 @@ a:hover {
 }
 
 .user {
-  margin-left: 16px;
+  margin-left: 49px;
   height: 40px;
   line-height: 40px;
   font-weight: 100;
@@ -95,15 +95,6 @@ aside, .main {
   height: 60px;
   padding-left: 10px;
 }
-
-.info * { display: block; }
-
-.info span:first-child {
-  font-size: 18px;
-  margin-bottom: 4px;
-}
-
-.info span:last-child { font-size: 14px }
 
 input[type="radio"] {
   display: inline-block;

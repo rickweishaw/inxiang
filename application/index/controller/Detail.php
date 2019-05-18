@@ -12,9 +12,7 @@ class Detail extends Controller
     public function Index(){
         $id = input('id');
         $item = G::where('id', $id)->find();
-        $avatar = U::where('nickname', cookie('name'))->value('avatar');
         $name = cookie('name');
-        $this->assign('avatar', $avatar);
         $this->assign('name', $name);
         $this->assign('item', $item);
         $this->assign('aid', G::where('id', $id)->value('author_id'));
