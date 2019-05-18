@@ -24,16 +24,17 @@
   </header>
 
   <div class="container">
-    <h1 class="heading">我的关注</h1>
+    <h1 class="heading">我的粉丝</h1>
 
     {php}use app\user\model\User as U;{/php}
-    {volist name="followed" id="item"}
+    {volist name="follower" id="item"}
     {php}$info = U::where('nickname', $item)->find();{/php}
+
     <div class="friend">
       <div><p class="user"><a href="#" title="跳转到他的主页">{$info.nickname}</a></p><p>{$info.saying}</p></div>
       <div class="pure-menu pure-menu-horizontal action">
         <ul class="pure-menu-list">
-          <li class="pure-menu-item"><a href="friend?id={$info.id}" class="pure-menu-link">取消关注</a></li>
+          <li class="pure-menu-item"><a href="friend?id={$info.id}" class="pure-menu-link">关注</a></li>
         </ul>
       </div>
     </div>

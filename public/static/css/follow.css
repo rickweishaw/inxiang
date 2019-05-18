@@ -1,4 +1,6 @@
 @charset "UTF-8";
+html, body { height: 100%; }
+
 body {
     font-size: 16px;
     color: #333;
@@ -71,33 +73,30 @@ header img {
     position: relative;
     top: 3.8em;
     width: 72%;
-    /* height: 43em; */
+    height: 85%;
     background-color: #fff;
     margin: 0 auto;
     padding-bottom: 1em;
+    z-index: -1;
 }
 
 .container .bottom {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
     text-align: center;
     color: #666;
     font-size: 12px;
     margin-bottom: .1em;
 }
 
-.heading {border-bottom: 1px solid #c9c9c9}
-
-.heading ul,
-.action ul { width: 100%; }
-
-.heading ul li,
-.action ul li { width: 50%; }
-
-.heading ul li:last-child { width: 49.7%; }
-
-.heading ul li a,
-.action ul li a { text-align: center; }
-
-.action ul li:last-child { width: 44%; }
+.heading {
+    display: block;
+    text-align: center;
+    font-weight: normal;
+    color: #666;
+    border-bottom: 1px solid #c9c9c9;
+}
 
 .friend {
     position: relative;
@@ -105,6 +104,7 @@ header img {
     margin: 1em 0 0 2em;
     padding: 1em 0 0 .5em;
     display: inline-block;
+    float: left;
     width: 20em;
     height: 11em;
     border: 1px solid #c9c9c9;
