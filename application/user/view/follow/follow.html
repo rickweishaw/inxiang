@@ -36,11 +36,10 @@
     {volist name="followed" id="item"}
     {php}$info = U::where('nickname', $item)->find();{/php}
     <div class="friend">
-      <div><p>{$info.nickname}</p><p>{$info.saying}</p></div>
+      <div><p class="user"><a href="#" title="跳转到他的主页">{$info.nickname}</a></p><p>{$info.saying}</p></div>
       <div class="pure-menu pure-menu-horizontal action">
         <ul class="pure-menu-list">
-          <li class="pure-menu-item"><a href="friend?id={$info.id}" class="pure-menu-link">已关注</a></li>
-          <li class="pure-menu-item"><a href="chat?id={$info.id}" class="pure-menu-link">私信</a></li>
+          <li class="pure-menu-item"><a href="friend?id={$info.id}" class="pure-menu-link">取消关注</a></li>
         </ul>
       </div>
     </div>

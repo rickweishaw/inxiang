@@ -12,9 +12,7 @@ a {
   cursor: pointer;
 }
 
-a:hover {
-  color: #2c83c4;
-}
+a:hover {color: #2c83c4; }
 
 .iconfont {
   font-family: "iconfont" !important;
@@ -237,3 +235,5 @@ h4 { margin: 0; }
 }
 
 .pic img { cursor: pointer; }
+
+.submit { margin-left: 13em; }

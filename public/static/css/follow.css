@@ -12,9 +12,7 @@ a {
     cursor: pointer;
 }
 
-a:hover {
-    color: #2c83c4;
-}
+a:hover { color: #2c83c4; }
 
 .iconfont {
     font-family: "iconfont" !important;
@@ -118,12 +116,4 @@ header img {
     bottom: 0;
 }
 
-.friend div:first-child,
-.friend div:nth-child(2) { display: inline-block; }
-
 .friend p {margin: .5em; }
-
-.friend p:nth-child(2) {
-    font-size: 14px;
-    color: #666;
-}

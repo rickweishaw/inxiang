@@ -10,9 +10,7 @@ a {
   text-decoration: none;
 }
 
-a:hover {
-  color: #2c83c4;
-}
+a:hover {color: #2c83c4; }
 
 .container {
   position: relative;
