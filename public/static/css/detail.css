@@ -16,36 +16,27 @@ html, body, .container {
     width: 80%;
     height: auto;
 }
-.user {
+
+.user-info {
     position: relative;
-    padding: 30px 0 0 0;
-    margin-left: 16px;
+    margin: .3em 0 0 .5em;
+}
+
+.user-info .user {
+    position: relative;
+    padding: 2em 0 0 0;
+    margin-left: 5px;
     height: 40px;
     line-height: 40px;
     font-weight: 100;
-    color: #000;
+    color: #333;
     font-size: 20px;
 }
 
-.user * { display: inline-block; }
-
-.user img {
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-}
-
-.user span {
-    position: absolute;
-    bottom: 1.5em;
-}
-
-.user span:last-child {
-    left: 4.6em;
-    bottom: .2em;
-    display: block;
+.user-info .time {
     font-size: 12px;
     color: #666;
+    display: block;
 }
 
 p {padding: 0 .6em; }
@@ -57,4 +48,8 @@ p {padding: 0 .6em; }
     width: 15em;
 }
 
-.action ul li { background-color: #f3f3f3; }
+.action ul li {
+    text-align: center;
+    width: 7.5em;
+    background-color: #f3f3f3;
+}

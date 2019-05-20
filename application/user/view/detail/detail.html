@@ -14,9 +14,9 @@
     <div class="pure-g container">
       <div class="pure-u-16-24 display"><img src="{$item.path}"></div>
       <aside class="pure-u-8-24">
-        <div class="user">
+        <div class="user-info">
           <span class="user">{$name}</span>
-          <span>上传于 {$item.upload_time}</span>
+          <span class="time">上传于 {$item.upload_time}</span>
         </div>
         <p>{$item.desc}</p>
 
@@ -25,7 +25,6 @@
             <ul class="pure-menu-list">
                 <li class="pure-menu-item"><a href="detail/del?id={$item.id}" class="pure-menu-link">删除</a></li>
                 <li class="pure-menu-item"><a href="detail/down?id={$item.id}" class="pure-menu-link">另存为</a></li>
-                <li class="pure-menu-item"><a href="#" class="pure-menu-link">私信Ta</a></li>
             </ul>
         </div>
       </aside>
