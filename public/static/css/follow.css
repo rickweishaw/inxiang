@@ -1,10 +1,9 @@
 @charset "UTF-8";
-html, body { height: 100%; }
-
 body {
     font-size: 16px;
     color: #333;
     background-color: #f8f8f8;
+    z-index: -2;
 }
 
 a {
@@ -74,20 +73,8 @@ header img {
     top: 3.8em;
     width: 72%;
     height: 85%;
-    background-color: #fff;
     margin: 0 auto;
     padding-bottom: 1em;
-    z-index: -1;
-}
-
-.container .bottom {
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    text-align: center;
-    color: #666;
-    font-size: 12px;
-    margin-bottom: .1em;
 }
 
 .heading {
@@ -107,6 +94,7 @@ header img {
     float: left;
     width: 20em;
     height: 11em;
+    background-color: #fff;
     border: 1px solid #c9c9c9;
     border-radius: 4px;
 }

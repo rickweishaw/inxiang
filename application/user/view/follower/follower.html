@@ -31,7 +31,10 @@
     {php}$info = U::where('nickname', $item)->find();{/php}
 
     <div class="friend">
-      <div><p class="user"><a href="#" title="跳转到他的主页">{$info.nickname}</a></p><p>{$info.saying}</p></div>
+      <div>
+        <a class="user" href="?id={$info.id}" title="跳转到他的主页">{$info.nickname}</a>
+        <p>{$info.saying}</p>
+      </div>
       <div class="pure-menu pure-menu-horizontal action">
         <ul class="pure-menu-list">
           <li class="pure-menu-item"><a href="friend?id={$info.id}" class="pure-menu-link">关注</a></li>
@@ -39,7 +42,6 @@
       </div>
     </div>
     {/volist}
-    <p class="bottom">已经到底了...</p>
   </div>
 </body>
 </html>
