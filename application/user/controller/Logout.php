@@ -9,7 +9,7 @@ class Logout extends Controller
         cookie('name', null);
         Session::delete('email');
         Session::delete('num');
-        return $this->success('成功退出登录','http://inxiang.net');
+        return $this->success('成功退出登录','http://inxiang.net/login');
     }
 }
 
