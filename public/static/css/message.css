@@ -41,3 +41,10 @@ body { position: relative; }
     line-height: 30px;
     cursor: default;
 }
+
+.clear {
+    position: absolute;
+    right: 44px;
+    font-size: 14px;
+    color: dodgerblue;
+}
