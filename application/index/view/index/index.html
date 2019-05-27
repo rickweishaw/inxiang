@@ -6,7 +6,9 @@
   <link rel="stylesheet" href="https://at.alicdn.com/t/font_1040527_yewbbaaywk.css">
   <script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js" defer></script>
   <script src="__JS__/index.js" defer></script>
+  <script src="__JS__/message.js" defer></script>
   <link rel="stylesheet" href="__CSS__/index.css">
+  <link rel="stylesheet" href="__CSS__/message.css">
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>小印相 - 印记出相</title>
@@ -16,7 +18,7 @@
     <a href="index"><img src="__IMG__/inxiang.png"><h1>小印相</h1></a>
     <div class="pure-menu pure-menu-horizontal menu">
       <ul class="pure-menu-list">
-        <li class="pure-menu-item"><a href="#" title="消息" class="pure-menu-link"><i class="iconfont icon-message"></i></a></li>
+        <li class="pure-menu-item"><a href="javascript:showMsg()" title="消息" class="pure-menu-link"><i class="iconfont icon-message"></i></a></li>
         <li class="pure-menu-item"><a href="discover" title="发现" class="pure-menu-link"><i class="iconfont icon-discover"></i></a></li>
         <li class="pure-menu-item"><a href="user" title="用户" class="pure-menu-link"><i class="iconfont icon-user"></i></a></li>
       </ul>
@@ -73,6 +75,15 @@
         <p>Copyright &copy; <a target="__blank" href="https://github.com/rickweishaw">RCWei</a></p>
       </footer>
     </aside>
+  </div>
+
+  <div class="message">
+    <p><span>消息</span><span><i id="msg-close" class="iconfont icon-no" title="关闭"></i></span></p>
+    <div class="msg-cnt pure-menu">
+      <ul class="pure-menu-list">
+        <li class="pure-menu-item pure-menu-link item">RCWei 赞了你的 aaaa</li>
+      </ul>
+    </div>
   </div>
 </body>
 </html>
