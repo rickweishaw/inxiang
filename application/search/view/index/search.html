@@ -1,1 +1,28 @@
-展示搜索结果
+<!DOCTYPE html>
+<html lang="cmn-hans">
+<head>
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <link href="https://cdn.bootcss.com/pure/1.0.0/pure-min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://at.alicdn.com/t/font_1040527_hzn2sr5d456.css">
+  <link rel="stylesheet" href="__CSS__/search.css">
+  <script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js" defer></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>小印相 - 印记出相</title>
+</head>
+
+<body>
+  <header>
+    <a href="http://inxiang.net"><img src="__IMG__/inxiang.png"><h1>小印相</h1></a>
+    <form class="pure-form" action="search" method="GET" autocomplete="off" style="position:relative;left:25em;">
+      <i class="iconfont icon-search"></i><input type="search" name="keyword" placeholder="搜索用户..." style="padding-left: 2em;">
+    </form>
+    <div class="pure-menu pure-menu-horizontal menu">
+      <ul class="pure-menu-list">
+        <li class="pure-menu-item"><a href="javascript:showMsg()" title="消息" class="pure-menu-link"><i class="iconfont icon-message"></i></a></li>
+        <li class="pure-menu-item"><a href="user" title="用户" class="pure-menu-link"><i class="iconfont icon-user"></i></a></li>
+      </ul>
+    </div>
+  </header>
+</body>
+</html>
