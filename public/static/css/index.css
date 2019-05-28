@@ -248,3 +248,16 @@ h4 { margin: 0; }
 .pic img { cursor: pointer; }
 
 .submit { margin-left: 13em; }
+
+input[type="search"] {
+  width: 16em;
+  height: 2.4em;
+  font-size: 14px;
+}
+
+.icon-search {
+  position: relative;
+  left: 24px;
+  top: 2px;
+  color: #999;
+}
