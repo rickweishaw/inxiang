@@ -59,8 +59,11 @@ header img {
 .menu ul li a .iconfont { font-size: 32px; }
 
 .container {
-    width: 70%;
+    width: 50%;
+    padding-bottom: .2em;
     margin: 0 auto;
+    margin-top: 4em;
+    background-color: #fff;
 }
 
 input[type="search"] {
@@ -74,4 +77,70 @@ input[type="search"] {
     left: 24px;
     top: 2px;
     color: #999;
+}
+
+h3 {
+    margin: 0;
+    padding: 1em 1.5em;
+    font-weight: lighter;
+    font-size: 18px;
+}
+
+.result {
+    box-sizing: border-box;
+    width: 32em;
+    height: 10em;
+    margin: 0 1em 1.5em 8em;
+    padding: .5em;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.result p {
+    margin: .5em 0;
+}
+
+.user {
+    height: 30px;
+    line-height: 30px;
+    font-weight: 100;
+    color: #000;
+    font-size: 20px;
+}
+
+.profile { display: inline-block; }
+
+.action {
+    position: relative;
+    top: 1em;
+    float: right;
+    display: inline-block;
+    width: 7.5em;
+}
+
+.action .pure-button {
+    width: 7.2em;
+    margin: .5em 0
+}
+
+.saying {
+    font-size: 14px;
+    color: #666;
+}
+
+footer { width: 100%; }
+
+footer p {
+  letter-spacing: 0;
+  width: 100%;
+  text-align: center;
+  font-size: 12px;
+  color: #797979;
+}
+
+footer .iconfont {
+  font-size: 12px;
+  position: relative;
+  top: 2px;
+  color: #ccc;
 }

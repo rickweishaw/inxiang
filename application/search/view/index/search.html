@@ -24,5 +24,25 @@
       </ul>
     </div>
   </header>
+
+  <div class="container">
+    <h3>为你找到 {$count} 条结果！</h3>
+    {volist name="result" id="item"}
+    <div class="result">
+      <div class="profile">
+        <p class="user">{$item.nickname}</p>
+        <p class="saying">{$item.saying}</p>
+      </div>
+      <div class="action">
+        <a href="friend?id={$item.id}" class="pure-button pure-button-primary">加关注</a>
+        <a href="user?id={$item.id}" class="pure-button">去首页看看</a>
+      </div>
+    </div>
+    {/volist}
+
+    <footer>
+      <p>{php} echo date("Y"){/php} <i class="iconfont icon-code"></i> Powered by <a target="__blank" href="https://github.com/rickweishaw">RCWei</a></p>
+    </footer>
+  </div>
 </body>
 </html>
