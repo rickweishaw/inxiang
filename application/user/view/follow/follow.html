@@ -33,7 +33,7 @@
     {php}$info = U::where('nickname', $item)->find();{/php}
     <div class="friend">
       <div>
-        <a class="user" href="friend?id={$info.id}" title="跳转到他的主页">{$info.nickname}</a>
+        <a class="user" href="/space?id={$info.id}" title="跳转到他的主页">{$info.nickname}</a>
         <p>{$info.saying}</p>
       </div>
 
