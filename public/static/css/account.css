@@ -168,3 +168,17 @@ footer .iconfont {
   top: 2px;
   color: #ccc;
 }
+
+input[type="search"] {
+  width: 16em;
+  height: 2.4em;
+  font-size: 14px;
+}
+
+.icon-search {
+  font-size: 16px;
+  position: relative;
+  left: 24px;
+  top: 2px;
+  color: #999;
+}
