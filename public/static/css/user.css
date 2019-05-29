@@ -156,3 +156,10 @@ input[type="search"] {
   top: 2px;
   color: #999;
 }
+
+.likes {
+  display: block;
+  margin: 0.5em 1em;
+  font-size: 14px;
+  color: #999;
+}

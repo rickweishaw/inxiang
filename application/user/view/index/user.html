@@ -45,7 +45,10 @@
     <div class="gallery">
         <p>帖子</p>
         {volist name="gallery" id="item"}
-          <div class="item"><img src="{$item.path}" alt="{$item.id}"></div>
+          <div class="item">
+            <img src="{$item.path}" alt="{$item.id}">
+            <span class="likes"><i class="iconfont icon-like"></i>{$item.likes}</span>
+          </div>
         {/volist}
     </div>
   </div>
