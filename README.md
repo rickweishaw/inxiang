@@ -6,19 +6,19 @@
 
 ## 如何使用本网站？
 
-这个项目目前还没有发布到外网。如果觉得有兴趣看看这个网站怎么样的，可以在本地搭建 PHP+MySQL 环境（具体环境去到 [XAMPP](https://www.apachefriends.org/index.html) 进行下载安装）。
+这个项目目前还没有发布到外网。如果觉得有兴趣看看这个网站怎么样的，可以在本地搭建 Apache+PHP+MySQL 环境（具体环境去到 [XAMPP](https://www.apachefriends.org/index.html) 进行下载安装）。
 
-推荐最低使用 PHP 5.0.4 环境，这是TP5.0框架最低要求。再低就运行不了咯。
+推荐最低使用 PHP5.0.4 环境，这是ThinkPHP5.0框架最低要求。再低就运行不了咯。
 
-安装完环境就开始配置环境，把 Apache 的配置文件 http.conf （D:\xampp\apache\conf\httpd.conf）的
-<Directory /> 模块，改成这样。
+安装完环境就开始配置环境，把 Apache 的配置文件 http.conf （xampp\apache\conf\httpd.conf）的
+```<Directory />``` 模块，改成如下形式。
 ```
 <Directory />
     AllowOverride All
 </Directory>
 ```
 
-然后在 httpd-vhosts.conf 文件 （D:\xampp\apache\conf\extra\httpd-vhosts.conf）添加虚拟主机
+然后在 httpd-vhosts.conf 文件 （xampp\apache\conf\extra\httpd-vhosts.conf）添加虚拟主机
 ```
 <VirtualHost *:80>
   ServerAdmin inxiang.net
@@ -32,3 +32,9 @@
 
 SQL 数据库文件在 install 文件夹里，新建 inxiang 数据库再导入即可。
 最后在 host 文件 加上一行 ```127.0.0.1 inxiang.net``` 就可以在浏览器上输入 inxiang.net 访问了。
+
+
+# License
+Powered by RCWei
+
+Licensed under the [GNU GPL3](LICENSE) License
