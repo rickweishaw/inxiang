@@ -11,7 +11,7 @@
  Target Server Version : 100138
  File Encoding         : 65001
 
- Date: 17/05/2019 09:26:38
+ Date: 01/06/2019 10:04:09
 */
 
 SET NAMES utf8mb4;
@@ -27,13 +27,7 @@ CREATE TABLE `in_friend`  (
   `followed` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_520_ci NULL DEFAULT NULL COMMENT '被关注者',
   `fo_time` datetime(0) NULL DEFAULT NULL COMMENT '关注时间',
   PRIMARY KEY (`id`) USING BTREE
-) ENGINE = InnoDB AUTO_INCREMENT = 3 CHARACTER SET = utf8mb4 COLLATE = utf8mb4_unicode_520_ci ROW_FORMAT = Compact;
-
--- ----------------------------
--- Records of in_friend
--- ----------------------------
-INSERT INTO `in_friend` VALUES (1, 'rcwei28', 'Cellur', '2019-03-19 10:00:14');
-INSERT INTO `in_friend` VALUES (2, 'Cellur', 'rcwei28', '2019-03-26 10:20:37');
+) ENGINE = InnoDB AUTO_INCREMENT = 4 CHARACTER SET = utf8mb4 COLLATE = utf8mb4_unicode_520_ci ROW_FORMAT = Compact;
 
 -- ----------------------------
 -- Table structure for in_gallery
@@ -45,15 +39,10 @@ CREATE TABLE `in_gallery`  (
   `author` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_520_ci NULL DEFAULT NULL COMMENT '作者',
   `path` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_520_ci NULL DEFAULT NULL COMMENT '资源路径',
   `upload_time` datetime(0) NULL DEFAULT NULL COMMENT '上传时间',
-  `likes` bigint(10) NULL DEFAULT NULL COMMENT '点赞数',
+  `likes` bigint(10) UNSIGNED NULL DEFAULT 0 COMMENT '点赞数',
   `desc` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_520_ci NULL DEFAULT NULL COMMENT '描述',
   PRIMARY KEY (`id`, `author_id`) USING BTREE
-) ENGINE = InnoDB AUTO_INCREMENT = 4 CHARACTER SET = utf8mb4 COLLATE = utf8mb4_unicode_520_ci ROW_FORMAT = Compact;
-
--- ----------------------------
--- Records of in_gallery
--- ----------------------------
-INSERT INTO `in_gallery` VALUES (2, 2, 'Cellur', 'http://inxiang.net/upload/gallery/5c8f44858564c.jpeg', '2019-03-18 15:11:01', NULL, '教练，我想学树莓派！！');
+) ENGINE = InnoDB AUTO_INCREMENT = 11 CHARACTER SET = utf8mb4 COLLATE = utf8mb4_unicode_520_ci ROW_FORMAT = Compact;
 
 -- ----------------------------
 -- Table structure for in_user
@@ -69,12 +58,6 @@ CREATE TABLE `in_user`  (
   `gender` int(1) UNSIGNED NULL DEFAULT 0 COMMENT '性别',
   `is_active` int(1) UNSIGNED NULL DEFAULT 0 COMMENT '是否激活',
   PRIMARY KEY (`id`) USING BTREE
-) ENGINE = InnoDB AUTO_INCREMENT = 3 CHARACTER SET = utf8mb4 COLLATE = utf8mb4_unicode_520_ci ROW_FORMAT = Compact;
-
--- ----------------------------
--- Records of in_user
--- ----------------------------
-INSERT INTO `in_user` VALUES (1, 'rcwei28', '301f912a4b17af1c26d581a7557f4ed8e2e572ed', 'rcwei44@qq.com', '退潮后的水沫幻影', 13610460382, 0, 1);
-INSERT INTO `in_user` VALUES (2, 'Cellur', '5831122c93f7a17fb7453cfe5684eb8809462d32', 'rcwei28@sina.com', 'Think defferent', 12345678901, 0, 1);
+) ENGINE = InnoDB AUTO_INCREMENT = 5 CHARACTER SET = utf8mb4 COLLATE = utf8mb4_unicode_520_ci ROW_FORMAT = Compact;
 
 SET FOREIGN_KEY_CHECKS = 1;
